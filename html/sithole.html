@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset ="utf-8">
+		<meta name ="viewport" content="width=device-width,initial-scale=1.0">
+		<title>stFrancisamec | welcome </title>
+		<script src="../jquery-3.2.1.js"></script>
+		<script src="../service-worker.js"></script>
+
+		<!-- Web Application CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+		<!-- Web Application Manifest -->
+        <link rel="manifest" href="manifest.json">
+
+		<!-- Chrome for Android theme color -->
+		<meta name="theme-color" content="#2E3AA1">
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="Blog">
+		<link rel="icon" sizes="144x144" href="imge/manifest-icon-144.maskable.png">
+		<link rel="icon" sizes="192x192" href="imge/manifest-icon-192.maskable.png">
+		<link rel="icon" sizes="512x512" href="imge/manifest-icon-512.maskable.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Blog">
+		<link rel="apple-touch-icon" href="imge/apple-icon-180.png">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">	
+
+		<!-- Tile for Win8 -->
+		<meta name="msapplication-TileColor" content="#3372DF">
+		<meta name="msapplication-TileImage" content="imge/manifest-icon-192.maskable.png">
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<div id ="branding">
+					<img id = "logo_right" src="../img/ame.png"/> <span class ="small"> ST</span>FRANCIS<span class="highlight">AME</span>C- Ikageng
+				</div>
+				<nav id="nav_menu">
+					<ul>
+						<li><a  href="../index.html">Home</a></li>
+						<li><a class= "current" href="structure.html">Structure</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+					<div class="handle">Menu</div>
+				</nav>
+		</header>
+		<div id ="cover" >
+				<section id ="showcase_structure">
+			<div class ="showcase_left_structure">
+
+								<h3><b>SITHOLE</b></h3>
+
+							<p>
+								<img id = "profile_pic" src="../img/sithole.png"/>
+							</p>
+							<p>
+								Rev Segonetso J. Sithole                                                                                                     
+								Rev SJ. Sithole 1st child of Msasa J and Keboneilwe E. Sithole, matriculated 1994 at Borakanelo Secondary School Khuma in Stilfontein. 1997 enrolled at Vaal University of Technology for Mechanical Engineering. 2013 admited on trial for itinerant ministry in the West Conference, 2016 ordained as itinerant deacon. Currently studying for Bachelor of Theology Degree with South African Theological Seminary   
+							</p>
+
+								<p>
+									<div class ="expand">
+										<p><h3>see Pictures</h3></p>
+									</div>
+									<div class="answer">
+										<p>under construction.....!!!!</p>
+							
+									</div>
+								</p>
+						</div>                                                                                                  
+
+			<div class ="showcase_right_structure">
+					<u><h4>	CLERGY:</h4></u>
+						<a  href="shuping.html"><li>Rev Ramasedi J. Shuping</li></a></br>
+						<a  href="mokhobo.html"><li>Rev Thabo J. Mokhobo</li></a></br>
+						<a id ="priestLink" href="sithole.html"><li>Rev Segonetso J. Sithole</li></a></br>
+						<a  href="seitshiro.html"><li>Rev Habohiwe Z. Seitshiro</li></a></br>
+						<a  href="nkagisang.html"><li>Rev Dr MG Nkagisang</li></a></br>
+			</div>
+		</section>
+		</div>
+		
+		
+	
+			<footer id = "footer">
+				AME@POTCH copyright &copy;2017</br>
+				desinged&developed by Peiso "Pee Jay" Simone
+			</footer>
+				<script >
+
+				$('.answer').hide();
+
+				$('.expand').on('click', function(){
+ 				  	$(this).next('.answer').slideToggle();
+ 				 });
+
+		</script>
+			<script >
+		
+				$('.handle').on('click', function(){
+					$('nav ul').toggleClass('showing');
+				});
+
+		
+			</script>
+
+						<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+	</body>
+
+</html>

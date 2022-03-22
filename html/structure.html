@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset ="utf-8">
+		<meta name ="viewport" content="width=device-width,initial-scale=1.0">
+		<title>stFrancisamec | welcome </title>
+		<script src="../jquery-3.2.1.js"></script>
+		<script src="../service-worker.js"></script>
+
+		<!-- Web Application CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+		<!-- Web Application Manifest -->
+        <link rel="manifest" href="manifest.json">
+
+		<!-- Chrome for Android theme color -->
+		<meta name="theme-color" content="#2E3AA1">
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="Blog">
+		<link rel="icon" sizes="144x144" href="imge/manifest-icon-144.maskable.png">
+		<link rel="icon" sizes="192x192" href="imge/manifest-icon-192.maskable.png">
+		<link rel="icon" sizes="512x512" href="imge/manifest-icon-512.maskable.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Blog">
+		<link rel="apple-touch-icon" href="imge/apple-icon-180.png">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="imge/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">	
+
+		<!-- Tile for Win8 -->
+		<meta name="msapplication-TileColor" content="#3372DF">
+		<meta name="msapplication-TileImage" content="imge/manifest-icon-192.maskable.png">
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<div id ="branding">
+					<img id = "logo_right" src="../img/ame.png"/> <span class ="small"> ST</span>FRANCIS<span class="highlight">AME</span>C- Ikageng
+				</div>
+				<nav id="nav_menu">
+					<ul>
+						<li><a  href="../index.html">Home</a></li>
+						<li><a class= "current" href="structure.html">Structure</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+					<div class="handle">Menu</div>
+				</nav>
+		</header>
+		<div id ="cover" >
+				<section id ="showcase_structure">
+			<div class ="showcase_left_structure">
+										<hr>
+							<div class ="expand"><p><h3><u>CLERGY TEAM</h3></u></p></div>
+
+							<div class="answer">
+							<ul>
+								<li>I.	Rev Ramasedi JR. Shuping Pastor in charge</li>
+								<li>II.	Rev Thabo J. Mokhobo Associate Pastor </li>
+								<li>III.	Rev Habohiwe Z. Seitshiro Local Pastor</li>
+								<li>IV.	Rev Segonetso J. Sithole Itinerant Deacon</li>           
+								<li>V.	Rev DR Monyane G. Nkagisang Itinerant Deacon</li><br>
+
+								<p><h3><u>PASTORS SPOUSES</h3></u></p>
+		
+								<li>I.	Moth Nomayeza L.Shuping </li>
+								<li>II.	Moth Nomawethu F. Mokhobo</li>
+								<li>III.	Moth  Seitshiro </li>
+								<li>IV.	Moth Tebogo Nkagisang </li> 
+							</ul> </hr>
+						</div>
+				<hr>
+
+								   <div class ="expand"><p><h3><u>
+								   		STEWARDS BOARDS
+								   </h3></u></p></div>
+
+								  <div class="answer">
+							<ul>
+								<li>Bro S.A. Sebetlele ( Secretary )         
+								<li>Bro O. Motloung</li>
+								<li>Bro M.Shuping</li>
+								<li>Bro S. Vana</li>
+								<li>Bro M. Dithipe</li>
+								<li>Bro J. Phele</li>
+								<li>Bro R.E. Magome</li>
+								<li>Bro G. Mokgakala ( Ass Secretary )</li>     
+								<li>Bro B. Ntshanga</li>
+								<li>Sis K.J. Monaisa ( Treasurer )</li>
+								<li>Sis E. Modibedi</li>
+								<li>Sis S. Maaroganye</li>         
+								<li>Sis G. Matsile</li> 
+								<li>Sis M. Qaba</li>
+								<li>Prof K.P. Mokhobo ( Emeritus )</li>
+							</ul>
+
+							<h3><p><u>JUNIOR STEWARDS</u></p></h3>
+							<ul>
+								<li>Bro Raymond Matshe</li>
+								<li>Bro Thabo Mabaso</li>
+								<li>Sis Sibongile Dlamini</li>
+								<li>Bro Luyanda Lukas</li>
+								<li>Bro Katlego Gabaotswe</li>
+								<li>Bro Keorapetse Galeng</li>
+								<li>Sis Sindiswa Yona</li>
+								<li>Sis P.Legwase</li>
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+								   <div class ="expand"><p><h3><u>
+								   		COMMUNION SERVICE
+								   </h3></u></p></div>
+
+								  <div class="answer">
+							<ul>
+								<li>Sis J. Shoai(Steward Emeritus)</li>
+								<li>Sis Moshadi</li>
+								<li>Sis S. Maaroganye</li>         
+								<li>Sis Belani</li> 
+								<li>Sis K. Sesing</li>
+								<li>Sis G. Nkekne</li>
+								<li>Sis J. Yona</li>
+								<li>Sis S. Madondo</li>         
+								<li>Sis S. Manaisa</li> 
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+				<div class ="expand"><p><h3><u>
+								   		CLASS LEADER
+								   </h3></u></p></div>
+
+								  <div class="answer">
+							<ul>
+									<li>CLASS 1 Sis Maserame Matlawe</li> 
+									<li>CLASS 2 Sis Jane Ntshanga</li> 
+									<li>CLASS 3 Sis N.P. Manone</li>                                       
+									<li>CLASS 4 Bro Simon Vana </li>                                                
+									<li>CLASS 5 Sis Francinah Tlotleng</li>                                     
+									<li>CLASS 6 Sis Kora Monaisa</li>                                      
+									<li>CLASS 7 Bro Morgan Dithipe</li>                       
+									<li>CLASS 8 Sis Ellen Masilo </li>                       
+									<li>CLASS 9 Sis Rosinah Ntsie </li>                     
+									<li>CLASS 10 Sis Agnes Ntsimane</li>         
+									<li>CLASS 11 Sis M Lethoba</li>    
+									<li>CLASS 12 Rev Zacharia Seitshiro</li> 
+									<li>CLASS 13 Sis Matshidiso Monaisa</li> 
+									<li>CLASS 14 Sis E. Tau</li> 
+									<li>CLASS 15 Sis Gloria Nkenke</li> 
+									<li>CLASS 16 Sis Annah Ramashobane</li> 
+									<li>CLASS 17 Sis Franciah Sekgejane</li> 
+									<li>CLASS 18 Sis Sarah Maaroganye</li> 
+									<li>CLASS 19 Sis I Gorekwang</li> 
+									<li>CLASS 20 Sis V. Ntshanga</li> 
+									<li>CLASS 21 Bro Lazarus Setshoaro</li> 
+									<li>CLASS 22 Sis Molotsi</li>           
+									<li>CLASS 23 Sis J. Mbambalala</li> 
+									<li>CLASS 24 Sis J. Dintsi</li>                                  
+									<li>CLASS 25 Bro E. Makume</li>                   
+									<li>BOSKOP Bro T. Mooki</li>                      
+									<li>KROMDRAAI Sis Seboni</li>        
+									<li>MATLWANG VILLAGE Bro P. Dithipe</li> 
+									<li>RIETFONTEIN Bro O. Phele</li>                 
+									<li>RIETPOORT Bro Sentsho</li> 
+									<li>RIETPOORTJIE Bro Khunou</li>                    
+									<li>WAALKRAAL Bro Mekgwe</li> 
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+				<div class ="expand"><p><h3><u>
+								   		LAY PREACHERS
+								   </h3></u></p></div>
+
+								  <div class="answer">
+							<ul>
+									<li>Prof Kubedi Mokhobo</li> 
+									<li>Bro Joseph Phele</li> 
+									<li>Bro Simon Vana</li>                                       
+									<li>Bro Amos Sebetlele</li>                                                
+									<li>Bro David Maarohanye</li>                                     
+									<li>Bro William Mosete</li>                                      
+									<li>Bro Ramagoma Magome</li>                       
+									<li>Bro Oupa Motloung</li>                       
+									<li>Bro Richard Yona</li>                     
+									<li>Bro Prince Nthoba</li>         
+									<li>Bro Lazarus Setshoaro</li>    
+									<li>Sis K Mafoko</li> 
+									<li>Bro Frank Letsie</li> 
+									<li>Sis Jane Ntshanga</li> 
+									<li>Sis Ellen Modibedi</li> 
+									<li>Sis Martha Morake</li> 
+									<li>Sis Ellen Matlawe</li> 
+									<li>Sis Sophia Rabanye</li> 
+									<li>Bro D. Mthembu</li> 
+									<li>Bro I. Pheto</li> 
+									<li>Bro John Melamu</li> 
+								</ul>
+
+
+						</div>
+					</hr>
+				<hr>
+
+				   <div class ="expand"><p><h3><u>
+								   		TRASTEES'BOARD
+								   </h3></u></p></div>
+
+								  <div class="answer">
+							<ul>
+									<li>Bro F. Letsie ( Chair )</li> 
+									<li>Bro K.J. Manzana</li> 
+									<li>Bro T. Pheto</li>                                       
+									<li>Sis T. Modiakgotla</li>                                                
+									<li>Bro J. Melamu</li>                                     
+									<li>Bro S. Letlojane</li>  
+								</ul>
+
+						</div>
+					</hr>
+				<hr>
+
+				   <div class ="expand"><p><h3><u>
+								   		EXTENSION 6
+								   </h3></u></p></div>
+
+								  <div class="answer">
+							<h3><u><p>EXTENSION 6 STEWARD</p></u></h3>
+
+								<ul>
+									<li>Bro Kgwathisi</li>           
+									<li>Bro A Koki</li> 
+									<li>Bro E.M Makume</li>     
+
+							</ul>
+
+								<h3><u><p>EXTENSION 6 TRUSTEES</p></u></h3>
+
+								<ul>
+									<li>Sis D Hlanyane (chair)</li>           
+									<li>Bro Paul Maake</li> 
+									<li>Sis N Boysen</li>  
+									<li>Sis M Bomela</li>    
+
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+				   <div class ="expand"><p><h3><u>
+								   		DR M.D PHETLHUCENTER- BOARD OF TRUSTEES
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>Bro R. Yona ( Chair )</li>           
+									<li>Sis L. Moichela</li> 
+									<li>Sis S. Phetlhu</li>     
+									<li>Sis T. Monaisa</li>           
+									<li>Bro M. Galeng</li> 
+									<li>Bro M. Adonis</li>  
+									<li>Bro R. Mthanda</li>   
+									<li>Sis S. Magalakanqa</li>   
+
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+				  <div class ="expand"><p><h3><u>
+								   		WOMEN’S MISSIONARY SOCIETY
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>President: Mo N.L. Shuping</li>           
+									<li>1st Vice Pres: Sis N.P. Manone</li> 
+									<li>2nd Vice Pres: Sis S. Madondo </li>     
+									<li>3rd Vie Pres: Sis N.J. Ntshanga</li>           
+									<li>Rec Secretary: Sis S. Dintsi </li> 
+									<li>Ass Rec Secr: Sis E. Tau</li>  
+									<li>Corresponding Secr: Sis M. Lethoba</li>   
+									<li>Treasurer: Sis V.S. Ntshanga</li>   
+									<li>PME: Sis N.E. Mokhobo</li>  
+									<li>Parliamentarian: Sis A. Molefe</li>   
+									<li>Histiriographer: Sis N.J. Yona</li>  
+									<li>Worship Leader: Sis A. Ntsimane</li>  
+									<li>Member at Large: Sis P. Monaisa</li>   
+									<li>YPD Director: Sis T. Monaisa</li>  
+									<li>Statistician: Sis N. Seobi</li>  
+
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+								  <div class ="expand"><p><h3><u>
+								   		UNIT 
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>Chairperson: Sis M. Mokhobo</li>           
+									<li>Vice Chair: Sis K. Sesing</li> 
+									<li>Secretary: Sis M. Moremedi</li>     
+									<li>Financial Secretary: Sis S. Mmotsa</li>  
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+				 <div class ="expand"><p><h3><u>
+								   		YOUNG WOMEN’S IN MISSION (K.L MALINGA) 
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>Co-ordinator: Sis J. Ntshanga</li>           
+									<li>President: Sis Bessy Shika</li> 
+									<li>1stVice Pres: Sis Kele Tlharipe</li>     
+									<li>2nd Vice Pres: Sis Malulu Seitshiro</li>  
+									<li>Rec Secretary: Sis Lesego Sebonego</li>           
+									<li>Corresp Secr: Sis Kefilwe Olifant</li> 
+									<li>Treasurer: Sis Nti Makhafola</li>     
+									<li>Worship Leader: Sis Ouma Qokela</li>  
+									<li>Parliamentarian: Sis Minah Molusi</li>  
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+				 <div class ="expand"><p><h3><u>
+								   		YOUNG PEOPLE’S CHILDREN’S DIVISON OF THE WMS
+
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>Director: Sis T. Monaisa</li>           
+									<li>President: Sis P. Legwase</li> 
+									<li>1st Vice Pres: Bro Thabo Mabaso</li>     
+									<li>2nd Vice Pres: Bro Keorapetse Galeng</li>  
+									<li>3rd Vice Pres: Sis Keamogetswe Molusi</li>           
+									<li>Recording Secr: Sis Zandi Qokela</li> 
+									<li>Ass Rec Secr: Bro Ofentse Matsile</li>     
+									<li>Communication Secr: Sis Keamogetswe Mabe</li>  
+									<li>Financial Secr: Sis Bokamoso Mthanda</li>  
+									<li>Parliamentarian: Sis Kegomoditswe Monaisa</li>  
+									<li>Histiriographer Statistician: Bro Khumo Rampete</li> 
+									<li>Worship Leader: Bro Luyanda Lucas</li> 
+									<li>Editor: Bro Ramasedi Shuping</li> 
+									<li>Associate Editor: Sis Bokamoso Molusi</li> 
+									<li>Allen Star Coordinator: Sis Sereko Monaisa</li> 
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+			<div class ="expand"><p><h3><u>
+				LAY ORGANIZATION
+			</h3></u></p></div>
+				<div class="answer">
+
+								<ul>
+									<li>President: Sis E. Mokhobo</li>
+									<li>1st Vice Pres: Bro Selekisho</li>
+									<li>2nd Vice Pres: Sis E. Ntsoelengoe</li>
+									<li>3rd Vice Pres: Bro B. Ntshanga</li>
+									<li>Recording Secr: Sis G. Matsile</li>
+									<li>Ass Rec Secr: Sis P. Nzimankulu</li>
+									<li>Corresp Secr: Sis T. Manone</li>
+									<li>Treasurer: Sis M. Maaroganye</li>
+									<li>Financial Secr: Bro P. Gaebe</li>
+									<li>DLA: Sis I. Gorekwang</li>
+									<li>DPR: Sis H. Monaisa</li>
+									<li>Chaplain: Sis V. Ntshanga</li>
+									<li>Parliamentarian: Sis M. Modibedi</li>
+									<li>Histiriographer: Sis G. Sebetlele</li>
+									<li>Young Adult: Bro T. Maphosa</li>
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+				<div class ="expand"><p><h3><u>
+								   		BOARD OF CHRISTIAN EDUCATION
+
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>DIRECTOR: Bro R.E. Magome</li></br>
+									<h3><u>CHOIR CONDUCTORS</u></h3>
+									<li>Bro M. Monaisa</li>
+									<li>Bro P. Khumalo</li>
+									<li>President: Bro S. Sithole</li>
+									<li>Vice Pres: Bro R.E. Magome</li>
+									<li>Secretary: Sis M. Magome</li>
+									<li>Treasurer: Sis D. Ramashobane</li>
+									<li>Organiser: Sis S. Loate</li>
+									<li>Additional Member: Sis T. Sekete</li>
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+								<div class ="expand"><p><h3><u>
+								   		SUNDAY SCHOOL
+
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>Superitendent: Sis M. Galeng</li>
+									<li>Kindergarten: Sis A. Mutlwane</li>
+									<li>Junior: Sis L. Menoe</li>
+									<li>Intermediate: Sis N. Leshomo</li>
+									<li>PREPARATORY CLASS: Rev RJR. Shuping</li></br>
+									OVERSEEING COMMITTEE</n>
+									<li>Sis M. Galeng</li>
+									<li>Sis M. Maaroganye</li>
+									<li>Sis L. Stona</li>
+									<li>Sis M. Mthanda</li>
+									<li>All Teachers form part of the committee</li>
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+								<div class ="expand"><p><h3><u>
+								   		RICHARD ALLEN YOUNG ADULT’S COUNCIL
+
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>President: Sis Boipelo Manone</li>
+									<li>Vice Pres: Bro Bonakele Ntshanga</li>
+									<li>Rec Secr: Sis Pride Maimane</li>
+									<li>Corr Secr: Sis Cardine Jawle</li>
+									<li>Ass Secr: Bro Robert Sekano</li>
+									<li>Treasurer: Sis Tsholofelo Thamage</li>
+									<li>Parliamentarian: Bro Mohau Shuping</li>
+									<li>Worship Leader: Bro R Sekano</li>
+									<li>Histiriographer: Sis Ntswaki Rampou</li>
+									<li>Editor: Sis Lesego Msiza</li>
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+								<div class ="expand"><p><h3><u>
+								   		SONS OF ALLEN
+
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>President: Bro Conti Mosiane</li>
+									<li>Secretary: Bro T. Mthimkhulu</li>
+									<li>Corresponding: Bro S. Matsile</li>
+									<li>Treasurer: Bro Mongezi Mthanda</li>
+
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+				 <div class ="expand"><p><h3><u>
+								   		ALLEN CHRISTIAN ENVANGELI LEAGUE
+
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>President: Rev H.Z. Seitshiro</li>           
+									<li>Vice Pres: Bro J. Phele</li> 
+									<li>Chairperson: Sis G. Nkenke</li>     
+									<li>Secr: Sis M. Matlawe</li>  
+									<li>Vice Secr: Sis C. Ntasi</li>           
+									<li>Treasurer: Sis S. Maaroganye</li> 
+									<li>Chaplain: Bro M. Mabe</li>     
+									<li>Vice Chaplain: Bro O. Melamu</li>  
+									<li>Marshall: Sis M. Loate</li>  
+									<li>Transport Organiser: Sis Mpho Mooki</li>  
+							</ul>
+				 					<p><h3><u>
+								   		MEMBERS
+
+								   </h3></u></p>
+
+								<ul>
+									<li>Sis Merriam Mmotsa</li>           
+									<li>Sis Ellen Malebatso</li> 
+									<li>Sis A. Ramashobane</li>     
+									<li>Sis C. Digoamaje</li>  
+									<li>Sis E. Khalipa</li> 
+									<li>Sis M. Letshabo</li>
+									<li>Sis L. Motloung</li>
+									<li>Sis L. Boysa</li>
+									<li>Sis A. Lesho</li>
+									<li>Sis P. Mabe</li>
+									<li>Sis N. Gorekwang</li>
+									<li>Sis P. Seobi</li>
+									<li>Sis R. Joysa</li>
+									<li>Sis J. Sebetlele</li>
+									<li>Sis J. Khumisi</li>
+									<li>Sis M. Kemeng</li>
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+				<div class ="expand"><p><h3><u>
+								   		PASTOR’S AID COMMITTEE
+
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>Co-ordinator: Sis J. Shoai</li>           
+									<li>President: Sis J. Shoai</li> 
+									<li>Chair Lady: Sis M. Mokhobo</li>     
+									<li>Secretary: Sis C. Maseloane</li>  
+									<li>Treasurer: Sis M. Qokela</li> 
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+								<div class ="expand"><p><h3><u>
+								   		ANNAH SENATLE COMMITTEE
+
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>Sis Lebo Magome</li>
+									<li>Sis Queen May</li>
+									<li>Sis Archu Rabanye</li>
+									<li>Sis Elisa Mokhobo</li>
+									<li>Sis Maramanyana Makabe</li>
+									<li>Sis Ouma Moleko</li>
+									<li>Sis Tiny Sekete</li>
+									<li>Sis Mmoko Moloi</li>
+									<li>Sis Lolo Rampete</li>
+									<li>Sis Mathapelo Shoai</li>
+									<li>Sis Nono Pheto</li>
+									<li>Sis Matute Lesho</li>
+									<li>Sis Nana Sello</li>
+									<li>Sis Ouma Mosenogi</li>
+									<li>Sis Hope Monaisa</li>
+									<li>Sis Elizabeth Mokoena</li>
+									<li>Sis Francinah Tlotleng</li>
+									<li>Sis Ellen Modibedi</li>
+									<li>Sis Saila Nkenke</li>
+									<li>Sis Keledi Vana</li>
+									<li>Sis Dipuo Letshabo</li>
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+												<div class ="expand"><p><h3><u>
+								   		USHER’S BOARD
+
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>Bro L. Sehurutshe</li>
+									<li>Bro R. Matshe</li>
+									<li>Sis Kego Monaisa</li>
+									<li>Bro Steve Monaisa</li>
+									<li>Bro L. Setshoaro</li>
+									<li>Bro L. Seitshiro</li>
+									<li>Bro O. Ramasimong</li>
+									<li>Sis L. Menoe</li>
+									<li>Sis N. Leshomo</li>
+									<li>Sis P. Legwase</li>
+									<li>Sis K. Molusi</li>
+
+							</ul>
+						</div>
+					</hr>
+				<hr>
+
+												<div class ="expand"><p><h3><u>
+								   		FINANCE COMMITTEE
+
+								   </h3></u></p></div>
+
+								  <div class="answer">
+
+								<ul>
+									<li>Chairperson: Rev RJR. Shuping</li>
+									<li>Treasurer: Sis K. Monaisa</li>
+									<li>Secretariat: Bro SA. Sebetlele, Bro B. Mokgakala</li>
+								</ul>
+							</br>
+									<p>
+										<h3><u>MEMBERS</u></h3>
+									</p>
+
+									<ul>
+									<li>Sis M. Galeng</li>
+									<li>Sis L. Stona</li>
+									<li>Sis S. Manzana</li>
+									<li>Bro C. Mosiane</li>
+									<li>Bro S. Mokhobo</li>
+									<li>Bro P. Gaebee</li>
+							</ul>
+						</div>
+					</hr>
+				<hr>	
+			</div>			
+		
+			<div class ="showcase_right_structure">
+					<u><h4>	CLERGY:</h4></u>
+						<a id ="priestLink" href="shuping.html"><li>Rev Ramasedi J. Shuping</li></a></br>
+						<a id ="priestLink" href="mokhobo.html"><li>Rev Thabo J. Mokhobo</li></a></br>
+						<a id ="priestLink" href="sithole.html"><li>Rev Segonetso J. Sithole</li></a></br>
+						<a id ="priestLink" href="seitshiro.html"><li>Rev Habohiwe Z. Seitshiro</li></a></br>
+						<a id ="priestLink" href="nkagisang.html"><li>Rev Dr MG Nkagisang</li></a></br>
+			</div>
+		</section>
+		</div>
+		
+		
+	
+			<footer id = "footer">
+				AME@POTCH copyright &copy;2017</br>
+				desinged&developed by Peiso "Pee Jay" Simone
+			</footer>
+				<script >
+
+				$('.answer').hide();
+
+				$('.expand').on('click', function(){
+ 				  	$(this).next('.answer').slideToggle();
+ 				 });
+
+		</script>
+			<script >
+		
+				$('.handle').on('click', function(){
+					$('nav ul').toggleClass('showing');
+				});
+
+		
+			</script>
+
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+				</script>
+
+	</body>
+
+</html>

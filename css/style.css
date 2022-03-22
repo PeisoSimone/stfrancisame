@@ -1,0 +1,393 @@
+
+html{
+	height:100%;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font: 15px/1.5 Arial, Helvatica, sans-serif;
+	padding: 0;
+	margin: 0;
+	height:100%;
+}
+
+.container{
+	margin: auto;
+	overflow: hidden;
+
+}
+
+header{
+	background: #33424a;
+	color: white;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom:#e8491d 3px solid; 
+	position: fixed;
+	width: 100%;
+}
+#logo_right{
+	max-width: 30px;
+	float: left;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:15px; 
+}
+
+header ul{
+	margin: 0;
+	padding: 0;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 12px 0 12px;
+}
+header #branding{
+	float: left;
+	font-size: 20px;
+
+}
+
+header #branding h1{
+	margin: 0;
+}
+
+header nav{
+	float: right; 
+
+}
+
+header .highlight, header .current {
+	color:#e8491d ;
+	font-weight: bold;
+}
+
+header .small{
+	text-transform: lowercase;
+	font-style: italic;
+}
+
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+#cover{
+	padding-top: 100px;
+}
+
+/*showcase**/
+#showcase{
+	padding-top: 103px;
+	box-sizing: border-box;
+	height: 100%;
+	overflow: hidden;
+
+}
+
+#showcase .showcase_left{
+	width:320px;
+	float: left; 
+	height: 100%;
+
+}
+#showcase_about{
+	padding-top: 75px;
+	overflow: hidden;
+	padding: 5px;
+}
+#showcase_about .showcase_left_about{
+	display:inline-block;
+	color: #000000;
+	width: 70%;
+	text-align: center;
+	overflow: hidden;
+}
+
+#showcase_about .showcase_right_about_top{
+	color: #ffffff;
+	width: 29%;
+	text-align: center;
+	overflow: hidden;
+	background-color: #33424a;
+	border: #e8491d 1px solid;
+	float: right;
+}
+#showcase_about .showcase_right_about_bottom{
+	color: #ffffff;
+	width: 29%;
+	text-align: center;
+	overflow: hidden;
+	background-color: #33424a;
+	border: #e8491d 1px solid;
+	float:right;
+}
+#showcase_structure{
+	padding-top: 75px;
+	overflow: hidden;
+	padding: 5px;
+	text-align: center;
+}
+#showcase_structure .showcase_left_structure{
+	display:inline-block;
+	color: #000000;
+	width: 70%;
+	text-align: center;
+	overflow: hidden;
+}
+
+#showcase_structure .showcase_right_structure{
+	color: #ffffff;
+	width: 29%;
+	max-height: fill;
+	text-align: center;
+	overflow: hidden;
+	background-color: #33424a;;
+	padding-top: 10px;
+	border: #e8491d 1px solid;
+	float: right;
+}
+
+
+#showcase .showcase_right{
+	display: -webkit-box;
+	-webkit-box-flex:1;
+	-webkit-box-orient:vertical;
+	width:auto;
+	text-align: center;
+	color: #ffffff;
+	background: url('../img/background.png') -10%;
+	background-position: center;
+	height: 100%;
+}
+
+.showcase_right p{
+	padding: 20px 90px 90px 90px;
+	text-align: relative;
+}
+.showcase_right h1{
+	padding-top:250px; 
+
+}
+
+.backgroundpic {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#footer{
+	padding: 10px;
+	border-top: 3px solid #000000;
+	background-color: #b82424;
+	text-align: center;
+	color: #ffffff;
+	bottom: 0;
+	position: fixed;
+	text-align: center;
+	min-height: 5%;
+	width: 100%;
+}
+
+.expand{
+	color: #007ead;
+	cursor: pointer;
+}
+
+@media( max-width: 450px){
+	header #branding,
+	header #logo_right,
+	header #nav_menu{
+		float: none;
+		text-align: center;
+	}
+	header #logo_right{
+		padding-left: 10px;
+	}
+	body{
+		font-size: 10px;
+	}
+	#showcase .showcase_right{
+		height: 30%;
+		overflow: scroll;
+	}
+	#showcase .showcase_left{
+	width:320px;
+	float: left; 
+	padding-left: 60px;
+	padding-right: 60px;
+	background: url('../img/background.png') -10%;
+	background-position: center;
+	overflow: scroll;
+	height: 70%;
+	}
+
+	#showcase .showcase_right h1{
+		padding-top: 0%;
+	}
+	
+	.showcase_left_structure  #profile_pic{
+		width: 150px;
+
+	}
+	#gallery{
+	max-width: 700px;
+	width: 100%;
+	height: 100%;
+}
+
+}
+
+@media( max-width: 375px){
+	header #branding,
+	header #logo_right,
+	header #nav_menu{
+		float: none;
+		text-align: center;
+	}
+	header #logo_right{
+		padding-left: 10px;
+	}
+	body{
+		font-size: 10px;
+	}
+	#showcase .showcase_left{
+	width:320px;
+	float: left; 
+	padding-left: 30px;
+	padding-right: 30px;
+	background: url('../img/background.png') -10%;
+	background-position: center;
+	overflow: hidden;
+	}
+
+
+}
+
+@media( max-width: 320px){
+	header #branding,
+	header #logo_right,
+	header #nav_menu{
+		float: none;
+		text-align: center;
+	}
+	header #logo_right{
+		padding-left: 10px;
+	}
+	body{
+		font-size: 10px;
+	}
+	#showcase .showcase_left{
+	width:320px;
+	float: left; 
+	padding-left: 2px;
+	padding-right: 2px;
+	background: url('../img/background.png') -10%;
+	background-position: center;
+	overflow: hidden;
+	}
+
+}
+
+.showcase_right_structure li{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.showcase_right_structure #priestLink ,#viewed{
+	font-weight: bolder;
+	color: #e8491d;
+	text-decoration: underline;
+}
+
+.showcase_right_structure #priestLink :hover{
+	color: #cccccc;
+	font-weight: bold;
+} 
+
+#pictures{
+	max-width: 300px;
+	width: 100%;
+	height: 100%;
+
+}
+nav ul{
+	background-color: #33424a;
+	overflow: hidden;
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	-webkit-transition:max-height 0.4s;
+	-ms-transition:max-height 0.4s;
+	-moz-transition:max-height 0.4s;
+	-o-transition:max-height 0.4s;
+	transition:max-height 0.4s;
+}
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+}
+
+.handle{
+	width: 100%;
+	background: #192d38;
+	text-align: center;
+	box-sizing:border-box;
+	padding: 15px 10px;
+	cursor: pointer;
+	color: white;
+	display: none;
+	font-size: 15px;
+
+}
+.expand{
+	cursor: pointer;
+	color: blue;
+}
+
+@media screen and (max-width: 448px){
+	nav ul{
+		max-height: 0;
+	}
+	.showing{
+		max-height: 100em;
+		
+	}
+	nav ul li{
+		box-sizing:border-box;
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+		background: #2e5061;
+	}
+	.handle{
+		display: block;
+	}
+	#cover{
+		padding-top: 125px;
+	}
+	#showcase{
+		padding-top: 125px;
+		display: flex;
+		flex-direction: column;
+
+	}
+	#showcase_right{
+		width: 100%;
+	}
+
+header a{
+	color: white;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size:12px; 
+ }
+}
+
