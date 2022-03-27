@@ -166,6 +166,7 @@ header a:hover{
 	background: url('../img/background.png') -10%;
 	background-position: center;
 	height: 100%;
+	overflow: scroll;
 }
 
 .showcase_right p{
