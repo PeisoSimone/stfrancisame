@@ -146,10 +146,10 @@ header a:hover{
 #showcase_structure .showcase_right_structure{
 	color: #ffffff;
 	width: 29%;
-	max-height: fill;
+	max-height: fit-content;
 	text-align: center;
 	overflow: hidden;
-	background-color: #33424a;;
+	background-color: #33424a;
 	padding-top: 10px;
 	border: #e8491d 1px solid;
 	float: right;
@@ -171,7 +171,6 @@ header a:hover{
 
 .showcase_right p{
 	padding: 20px 90px 90px 90px;
-	text-align: relative;
 }
 .showcase_right h1{
 	padding-top:250px; 
@@ -326,7 +325,6 @@ nav ul{
 	text-align: center;
 	margin: 0;
 	-webkit-transition:max-height 0.4s;
-	-ms-transition:max-height 0.4s;
 	-moz-transition:max-height 0.4s;
 	-o-transition:max-height 0.4s;
 	transition:max-height 0.4s;
